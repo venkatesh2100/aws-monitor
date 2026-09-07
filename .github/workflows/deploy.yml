@@ -71,7 +71,7 @@ jobs:
           script: |
             set -e
 
-            cd /home/ubuntu/my-project
+            cd /home/ubuntu/
 
             echo "Deploying image: $IMAGE_TAG"
 
