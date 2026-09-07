@@ -74,9 +74,10 @@ jobs:
             cd /home/ubuntu/
             export ECR_REGISTRY=${{ env.ECR_REGISTRY }}
             export IMAGE_TAG=${{ env.IMAGE_TAG }}
-            export BACKEND_REPOSITORY=fastapi-app
-            export WEB_REPOSITORY=react-app
+            export BACKEND_REPOSITORY=${{env.BACKEND_REPOSITORY}}
+            export WEB_REPOSITORY=${{env.WEB_REPOSITORY}}
 
+            
             echo "Deploying image: $IMAGE_TAG"
 
             aws ecr get-login-password \
