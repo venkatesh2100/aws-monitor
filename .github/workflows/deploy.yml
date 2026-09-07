@@ -9,8 +9,8 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REGISTRY: 862172028477.dkr.ecr.us-east-1.amazonaws.com
-  BACKEND_REPOSITORY: fastapi-app
-  WEB_REPOSITORY: react-app
+  BACKEND_REPOSITORY: venky2100/fastapi-app
+  WEB_REPOSITORY: venky2100/react-app
 
 jobs:
   build-and-deploy:
